@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14/"
+     xml:base="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliatedOrganization -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliatedOrganization">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#associatedWithProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#associatedWithProject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#associatedWithTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#associatedWithTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#coProduces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#coProduces">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#collaboratesWithGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#collaboratesWithGroup">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasContributor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#collaboratesWithPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#collaboratesWithPartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#isConnected"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasAffiliation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasAffiliation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasCitationData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasCitationData">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasContributor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasContributor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasFunded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasFunded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasWorksData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#hasWorksData">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inField">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inSubGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inSubGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inSubfield -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inSubfield">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inferredRelatedToPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inferredRelatedToPaper">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToPaper"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#isConnected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#isConnected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#lastKnownInstitution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#lastKnownInstitution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourceEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourceEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToEntity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourcePaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourcePaper">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inferredRelatedToPaper"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourceProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkSourceProject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#has"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToEntity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetPaper">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#inferredRelatedToPaper"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#linkTargetTopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#has"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#outputOfProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#outputOfProject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#partOfGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#partOfGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#partOfSubGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#partOfSubGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producesOutput"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producesOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producesOutput">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#publishedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#publishedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#referencesOrCites -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#referencesOrCites">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToEntity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToPaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#relatedToTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#representedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#representedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#resultsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#subGroupAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#subGroupAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksOn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliationEndYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliationEndYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliationStartYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#affiliationStartYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_all_subfield_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_all_subfield_max">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_all_subfield_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_all_subfield_min">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_same_subfield -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citation_percentile_year_same_subfield">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citedByCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citedByCount">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citesCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#citesCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#confidenceScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#confidenceScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#doi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#doi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#funder_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#funder_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#grantsCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#grantsCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#h_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#h_index">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#i10_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#i10_index">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#id">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Activity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#institution_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#institution_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#openalex_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#openalex_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#id"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#producedYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#publisher_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#publisher_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#quantity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#startingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#startingDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#wikidata_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#wikidata_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#worksCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#year">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#2yr_mean_citedness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#2yr_mean_citedness">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Activity">
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Affiliation">
+        <rdfs:label>Affiliation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#CitationCountMetadata">
+        <rdfs:label>CitationCountMetadata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Confidence">
+        <rdfs:label>Confidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Domainn">
+        <rdfs:label>Domainn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Entity">
+        <rdfs:label>Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Field">
+        <rdfs:label>Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization"/>
+        <rdfs:label>Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output">
+        <rdfs:label>Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Publication"/>
+        <rdfs:label>Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Output"/>
+        <rdfs:label>Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Subfield">
+        <rdfs:label>Subfield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#Topic">
+        <rdfs:label>Topic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/untitled-ontology-14#WorksCountMetadata">
+        <rdfs:label>WorksCountMetadata</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

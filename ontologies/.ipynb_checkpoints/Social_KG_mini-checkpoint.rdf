@@ -1,0 +1,871 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini/"
+     xml:base="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#associatedWithProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#associatedWithProject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#associatedWithTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#associatedWithTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#coProduces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#coProduces">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#collaboratesWithGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#collaboratesWithGroup">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasContributor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#collaboratesWithPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#collaboratesWithPartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#isConnected"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasCitationData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasCitationData">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasContributor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasContributor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasFunded -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasFunded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasWorksData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#hasWorksData">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inDomain -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inDomain">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inField -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inField">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inSubGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inSubGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inSubfield -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#inSubfield">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#isConnected -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#isConnected">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#lastKnownInstitution -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#lastKnownInstitution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourceEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourceEntity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourcePaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourcePaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourceProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkSourceProject">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#has"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetEntity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetEntity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetPaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#linkTargetTopic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#has"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#outputOfProject -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#outputOfProject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#partOfGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#partOfGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#partOfSubGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#partOfSubGroup">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#participatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producesOutput"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producesOutput -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producesOutput">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#publishedOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#publishedOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#referencesOrCites -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#referencesOrCites">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#relatedToPaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#relatedToPaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#relatedToTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#relatedToTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#representedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#representedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#resultsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#subGroupAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#subGroupAssociatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksOn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_all_subfield_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_all_subfield_max">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_all_subfield_min -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_all_subfield_min">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_same_subfield -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citation_percentile_year_same_subfield">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citedByCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citedByCount">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citesCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#citesCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#confidenceScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#confidenceScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#doi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#doi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#funder_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#funder_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#grantsCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#grantsCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#h_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#h_index">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#i10_index -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#i10_index">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#id">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Activity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#institution_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#institution_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#openalex_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#openalex_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#id"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#producedYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#publisher_works_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#publisher_works_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#quantity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#startingDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#startingDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Activity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#wikidata_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#wikidata_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#worksCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#year">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#2yr_mean_citedness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#2yr_mean_citedness">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Activity">
+        <rdfs:label>Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#CitationCountMetadata">
+        <rdfs:label>CitationCountMetadata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Confidence">
+        <rdfs:label>Confidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Domainn">
+        <rdfs:label>Domainn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Entity">
+        <rdfs:label>Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Field">
+        <rdfs:label>Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization"/>
+        <rdfs:label>Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output">
+        <rdfs:label>Output</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Paper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Publication"/>
+        <rdfs:label>Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Person">
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Project">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Publication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Output"/>
+        <rdfs:label>Publication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Subfield">
+        <rdfs:label>Subfield</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#Topic">
+        <rdfs:label>Topic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kaushalamancherla/ontologies/2025/4/social_KG_mini#WorksCountMetadata">
+        <rdfs:label>WorksCountMetadata</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
