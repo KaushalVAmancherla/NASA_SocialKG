@@ -1,0 +1,42 @@
+{
+  "3": {
+    "display_name": "Physical Sciences",
+    "description": "branch of natural science that studies non-living systems",
+    "openalex_id": "https://openalex.org/domains/3",
+    "siblings": [
+      "4",
+      "1",
+      "2"
+    ]
+  },
+  "2": {
+    "display_name": "Social Sciences",
+    "description": "branch of science focused on societies and the relationships among individuals within those societies",
+    "openalex_id": "https://openalex.org/domains/2",
+    "siblings": [
+      "4",
+      "1",
+      "3"
+    ]
+  },
+  "4": {
+    "display_name": "Health Sciences",
+    "description": "branch of science focused on human health and disease prevention, diagnosis, treatment, and management",
+    "openalex_id": "https://openalex.org/domains/4",
+    "siblings": [
+      "1",
+      "3",
+      "2"
+    ]
+  },
+  "1": {
+    "display_name": "Life Sciences",
+    "description": "branch of science that involve the scientific study of life – such as microorganisms, plants, and animals including human beings",
+    "openalex_id": "https://openalex.org/domains/1",
+    "siblings": [
+      "4",
+      "3",
+      "2"
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "27": {
+    "display_name": "Medicine",
+    "description": "field of study for diagnosing, treating and preventing disease",
+    "openalex_id": "https://openalex.org/fields/27",
+    "domain": {
+      "id": "4",
+      "display_name": "Health Sciences"
+    }
+  },
+  "33": {
+    "display_name": "Social Sciences",
+    "description": "academic disciplines concerned with society and the relationships between individuals in society",
+    "openalex_id": "https://openalex.org/fields/33",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "22": {
+    "display_name": "Engineering",
+    "description": "practice of using natural science, mathematics, and the engineering design process to solve technical problems",
+    "openalex_id": "https://openalex.org/fields/22",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "12": {
+    "display_name": "Arts and Humanities",
+    "description": "examination of human culture, including art, literature, philosophy, history, and artifacts",
+    "openalex_id": "https://openalex.org/fields/12",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "17": {
+    "display_name": "Computer Science",
+    "description": "study of computation",
+    "openalex_id": "https://openalex.org/fields/17",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "13": {
+    "display_name": "Biochemistry, Genetics and Molecular Biology",
+    "description": "study of chemical processes in living organisms",
+    "openalex_id": "https://openalex.org/fields/13",
+    "domain": {
+      "id": "1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "11": {
+    "display_name": "Agricultural and Biological Sciences",
+    "description": "study of plant and animal biology for food, fuel, fiber, and reclamation, including environmental and economic impacts",
+    "openalex_id": "https://openalex.org/fields/11",
+    "domain": {
+      "id": "1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "23": {
+    "display_name": "Environmental Science",
+    "description": "interdisciplinary field that studies human interaction with the environment",
+    "openalex_id": "https://openalex.org/fields/23",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "25": {
+    "display_name": "Materials Science",
+    "description": "research, discovery and design of physical materials (especially solids)",
+    "openalex_id": "https://openalex.org/fields/25",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "31": {
+    "display_name": "Physics and Astronomy",
+    "description": "study of matter and its motion, along with related concepts such as energy and force",
+    "openalex_id": "https://openalex.org/fields/31",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "14": {
+    "display_name": "Business, Management and Accounting",
+    "description": "administration of a commercial enterprise",
+    "openalex_id": "https://openalex.org/fields/14",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "36": {
+    "display_name": "Health Professions",
+    "description": "field encompassing a wide range of disciplines focused on health care, treatment, and advice, including public health and occupational therapy",
+    "openalex_id": "https://openalex.org/fields/36",
+    "domain": {
+      "id": "4",
+      "display_name": "Health Sciences"
+    }
+  },
+  "20": {
+    "display_name": "Economics, Econometrics and Finance",
+    "description": "social science that studies the production, distribution, and consumption of goods and services",
+    "openalex_id": "https://openalex.org/fields/20",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "32": {
+    "display_name": "Psychology",
+    "description": "study of mental functions and behaviours",
+    "openalex_id": "https://openalex.org/fields/32",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "16": {
+    "display_name": "Chemistry",
+    "description": "branch of physical science concerned with the composition, structure and properties of matter",
+    "openalex_id": "https://openalex.org/fields/16",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "19": {
+    "display_name": "Earth and Planetary Sciences",
+    "description": "all fields of natural science related to the planet Earth and other planets",
+    "openalex_id": "https://openalex.org/fields/19",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "28": {
+    "display_name": "Neuroscience",
+    "description": "scientific study of the nervous system",
+    "openalex_id": "https://openalex.org/fields/28",
+    "domain": {
+      "id": "1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "26": {
+    "display_name": "Mathematics",
+    "description": "area of knowledge that includes the topics of numbers, formulas and related structures, shapes and the spaces in which they are contained, and quantities and their changes",
+    "openalex_id": "https://openalex.org/fields/26",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "24": {
+    "display_name": "Immunology and Microbiology",
+    "description": "study of the immune system and microorganisms, including their roles in health and disease",
+    "openalex_id": "https://openalex.org/fields/24",
+    "domain": {
+      "id": "1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "18": {
+    "display_name": "Decision Sciences",
+    "description": "branch of applied probability theory",
+    "openalex_id": "https://openalex.org/fields/18",
+    "domain": {
+      "id": "2",
+      "display_name": "Social Sciences"
+    }
+  },
+  "21": {
+    "display_name": "Energy",
+    "description": "study of energy in physical systems, its sources, technology, management, and impact on sustainability",
+    "openalex_id": "https://openalex.org/fields/21",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "29": {
+    "display_name": "Nursing",
+    "description": "caring for people who are sick or injured",
+    "openalex_id": "https://openalex.org/fields/29",
+    "domain": {
+      "id": "4",
+      "display_name": "Health Sciences"
+    }
+  },
+  "30": {
+    "display_name": "Pharmacology, Toxicology and Pharmaceutics",
+    "description": "branch of biology concerning drugs",
+    "openalex_id": "https://openalex.org/fields/30",
+    "domain": {
+      "id": "1",
+      "display_name": "Life Sciences"
+    }
+  },
+  "35": {
+    "display_name": "Dentistry",
+    "description": "branch of medicine dealing with oral health and teeth",
+    "openalex_id": "https://openalex.org/fields/35",
+    "domain": {
+      "id": "4",
+      "display_name": "Health Sciences"
+    }
+  },
+  "15": {
+    "display_name": "Chemical Engineering",
+    "description": "branch of science that applies physical sciences and life sciences together with applied mathematics and economics to produce, transform, transport, and properly use chemicals, materials and energy",
+    "openalex_id": "https://openalex.org/fields/15",
+    "domain": {
+      "id": "3",
+      "display_name": "Physical Sciences"
+    }
+  },
+  "34": {
+    "display_name": "Veterinary",
+    "description": "branch of medicine that deals with the prevention, management, diagnosis, and treatment of disease, disorder, and injury in non-human animals",
+    "openalex_id": "https://openalex.org/fields/34",
+    "domain": {
+      "id": "4",
+      "display_name": "Health Sciences"
+    }
+  }
+}

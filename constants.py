@@ -11,7 +11,7 @@ works_raw_openalex_data_fp = jpl_data_dir + 'works_open_alex_raw.json'
 
 person_to_works_id_jpl_fp = jpl_data_dir + 'person_to_works_id.json'
 
-ontology_fp = './ontologies/Social_KG.rdf'
+ontology_fp = './ontologies/Social_KG_mini.rdf'
 
 ORG = "ORGANIZATION"
 GROUP = "GROUP"
